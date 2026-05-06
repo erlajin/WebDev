@@ -6,8 +6,8 @@ const iconHtml = document.getElementById('icon-html');
 const iconCss = document.getElementById('icon-css');
 const iconJs = document.getElementById('icon-js');
 
-const lightModeIcon = "light.png"; 
-const darkModeIcon = "dark.png";   
+const lightModeIcon = "Pics/light.png"; 
+const darkModeIcon = "Pics/dark.png";   
 
 themeToggle.addEventListener('click', () => {
   const html = document.documentElement;
@@ -18,9 +18,9 @@ themeToggle.addEventListener('click', () => {
     
     themeIconImg.src = darkModeIcon; 
     
-    if(iconHtml) iconHtml.src = 'html.png';
-    if(iconCss) iconCss.src = 'css.png';
-    if(iconJs) iconJs.src = 'js.png';
+    if(iconHtml) iconHtml.src = 'Pics/html.png';
+    if(iconCss) iconCss.src = 'Pics/css.png';
+    if(iconJs) iconJs.src = 'Pics/js.png';
     
   } else {
     html.setAttribute('data-theme', 'dark');
@@ -28,9 +28,9 @@ themeToggle.addEventListener('click', () => {
    
     themeIconImg.src = lightModeIcon; 
     
-    if(iconHtml) iconHtml.src = 'html_b.png';
-    if(iconCss) iconCss.src = 'css_b.png';
-    if(iconJs) iconJs.src = 'js_b.jpg';
+    if(iconHtml) iconHtml.src = 'Pics/html_b.png';
+    if(iconCss) iconCss.src = 'Pics/css_b.png';
+    if(iconJs) iconJs.src = 'Pics/js_b.jpg';
   }
 });
 
