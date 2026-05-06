@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link rel="icon" type="image/jpg" href="favicon.jpg">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <button id="backToTop" class="back-to-top" title="Go to top">⬆</button>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#landing" class="logo">My Portfolio</a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#landing" class="nav-links">Home</a></li>
+        <li><a href="#about" class="nav-links">About</a></li>
+        <li><a href="#services" class="nav-links">Services</a></li>
+        <li><a href="#projects" class="nav-links">Projects</a></li>
+        <li><a href=".pdf" class="btn-cv-nav" download>Download Resume</a></li>
+        <li><a href="#contact" class="btn-contact">Contact Me</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button id="theme-toggle" class="theme-btn" title="Toggle Dark Mode">
+          <span id="theme-icon"><img src="dark.png" alt="Toggle theme" class="theme-icon-img"></span>
+        </button>
+        <button class="nav-toggle" id="nav-toggle">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <section id="landing">
+    <div class="landing-container reveal">
+      <div class="landing-text"><img src="me.png" class="overlay-me">
+        <h1><span>Hi!</span> I am Earla!</h1>
+        <h1>Future <span id="typewriter"></span></h1>
+        <p>Connect with me:</p>
+        <div class="landing-buttons">
+          <a href="https://www.linkedin.com/in/earla-jean-guico-b19a7a3a7/" class="btn-social" target="_blank">LinkedIn</a>
+          <a href="https://web.facebook.com/earlajeanguico/" class="btn-social" target="_blank">Facebook</a>
+          <a href="mailto:guicoearlajean@gmail.com" class="btn-social">Email</a>
+          <a href="https://www.instagram.com/earlajeanguico/" class="btn-social" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="reveal">
+      <h1 class="section-title">About Me</h1>
+      <div class="about-container">
+        <div class="about-card">
+          <img src="ej.jpg" alt="Earla Jean Guico" class="about-img">
+          <h3>Earla Jean Guico</h3>
+          <p>I am a Computer Engineering student at SLSU-Lucban and an aspiring Web Developer. I enjoy learning new languages and improving my skills in frontend and backend development.</p> <br>
+      
+          <h2>Tools I Use</h2>
+          <div class="tools-container">
+            <div class="tool-card">
+              <img src="html.png" alt="HTML" class="tools-img" id="icon-html">
+              <h4>HTML</h4>
+              <div class="skill-track"><div class="skill-fill" data-width="90%"></div></div>
+            </div>
+            <div class="tool-card">
+              <img src="css.png" alt="CSS" class="tools-img" id="icon-css">
+              <h4>CSS</h4>
+              <div class="skill-track"><div class="skill-fill" data-width="85%"></div></div>
+            </div>
+            <div class="tool-card">
+              <img src="js.png" alt="JavaScript" class="tools-img" id="icon-js">
+              <h4>JavaScript</h4>
+              <div class="skill-track"><div class="skill-fill" data-width="70%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline">
+    <div class="reveal">
+      <h1 class="section-title-projects">My Journey</h1>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <h3>Southern Luzon State University-Main Campus</h3>
+          <p class="timeline-date">2024 - Present</p>
+          <p>Currently a 2nd-year student pursuing a Bachelor of Science in Computer Engineering. Focusing on software development, web technologies, and systems architecture.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Manuel S. Enverga University Foundation-Candelaria, Inc.</h3>
+          <p class="timeline-date">Graduated 2024</p>
+          <p>Completed secondary education with honors, discovering my passion for coding and computer hardware.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="reveal">
+      <h1 class="section-title">What I Do</h1>
+      <div class="services-container">
+        <div class="service-card">
+          <div class="service-icon"><img src="front.png" alt="Frontend Development" class="service-img"></div>
+          <h3>Frontend Development</h3>
+          <p>I build responsive, interactive, and beautiful user interfaces using HTML, CSS, and modern JavaScript.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><img src="resp.png" alt="Responsive Design" class="service-img"></div>
+          <h3>Responsive Design</h3>
+          <p>Ensuring your website looks perfect and functions seamlessly on mobile phones, tablets, and desktop computers.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><img src="web.png" alt="Web Maintenance" class="service-img"></div>
+          <h3>Web Maintenance</h3>
+          <p>Updating existing websites, fixing bugs, improving site speed, and ensuring everything runs smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="projects">
+    <div class="reveal">
+      <h1 class="section-title-projects">My Projects</h1>
+      
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="html-css">HTML & CSS</button>
+      </div>
+
+      <div class="projects-container">
+        <div class="project-card" data-category="java">
+          <div class="project-img-container">
+            <img src="ms.png" alt="MS PowerPoint UI" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3>MS PowerPoint UI</h3>
+            <p>A responsive landing page design for an application using Java.</p>
+            <div class="project-buttons">
+              <button class="btn-project open-modal" data-modal="modal-1">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="java">
+          <div class="project-img-container">
+            <img src="calc.png" alt="Interactive Calculator" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3>Interactive Calculator</h3>
+            <p>A functional calculator built entirely with Java.</p>
+            <div class="project-buttons">
+              <button class="btn-project open-modal" data-modal="modal-2">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="html-css">
+          <div class="project-img-container">
+            <img src="port.png" alt="Web Project Placeholder" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3>My Web Portfolio</h3>
+            <p>A beautiful responsive website built using HTML and CSS.</p>
+            <div class="project-buttons">
+              <button class="btn-project open-modal" data-modal="modal-3">Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="modal-1" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <h2>MS PowerPoint UI</h2>
+      <br>
+      <p><strong>Description:</strong> A beautiful, responsive landing page created for a fictional coffee shop. Designed mobile-first to ensure it looks great on all screens.</p><br>
+      <p><strong>Languages used:</strong> Java</p>
+    </div>
+  </div>
+
+  <div id="modal-2" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <h2>Interactive Calculator</h2>
+      <br>
+      <p><strong>Description:</strong> A fully functioning Java-based calculator.</p><br>
+      <p><strong>Language used:</strong> Java</p>
+    </div>
+  </div>
+
+  <div id="modal-3" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <h2>My Web Portfolio</h2>
+      <br>
+      <p><strong>Description:</strong> An easy to use, and accessible web portfolio for all of my web development projects.</p><br>
+      <p><strong>Languages used:</strong> HTML, CSS</p>
+    </div>
+  </div>
+
+  <div id="modal-1" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <h2>MS PowerPoint UI</h2>
+      <br>
+      <p><strong>Description:</strong> A beautiful, responsive landing page created for a fictional coffee shop. Designed mobile-first to ensure it looks great on all screens.</p><br>
+      <p><strong>Languages used:</strong> Java</p>
+    </div>
+  </div>
+
+  <div id="modal-2" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-modal">×</span>
+      <h2>Interactive Calculator</h2>
+      <br>
+      <p><strong>Description:</strong> A fully functioning Java-based calculator.</p><br>
+      <p><strong>Language used:</strong> Java</p>
+    </div>
+  </div>
+
+  <section id="contact">
+    <div class="reveal">
+      <h2 class="section-contact">Contact Me</h2>
+      <div class="contact-container">
+        <div class="map">
+          <iframe src="https://www.google.com/maps?q=Wakas,Tayabas,Quezon&output=embed" class="g-maps" allowfullscreen></iframe>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <p style="margin-bottom: 15px;">Fill out the form to get connected!</p>
+            <input type="hidden" name="access_key" value="51430231-e42a-43e8-a11b-26a3f8c6312c">
+            
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="juandelacruz@mail.com" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+            
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button type="submit" class="btn-submit">Submit</button>
+          </form>
+          <div class="message" id="successMessage">Thank you for reaching out! I will get back to you soon.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <p>Earla Jean Guico © 2026 | For Educational Purposes Only</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
